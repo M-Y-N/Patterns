@@ -19,6 +19,7 @@
 *.tar.gz
 *.xml
 *.rar
+*.png
 
 *.html
 *.js
