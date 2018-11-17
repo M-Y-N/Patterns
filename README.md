@@ -1,3 +1,3 @@
 # Patterns
-Some labs using patterns
+Some labs of Java using patterns
 Patterns: adapter, composite, iterator, observer, proxy
