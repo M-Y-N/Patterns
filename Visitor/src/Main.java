@@ -1,6 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        IElementOfComputers computers = new Computer();
+        VisitorComputer visitorComputer = new VisitorComputer();
+        computers.accept(visitorComputer);
+        visitorComputer.printTotalPower();
     }
 }
