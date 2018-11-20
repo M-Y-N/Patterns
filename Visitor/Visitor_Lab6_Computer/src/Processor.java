@@ -1,16 +1,16 @@
 /**
  * @author Ivan Zaichenko
  * @version 1.0
- * Клас VideoCard реалізує інтерфейс IElementOfComputers, створює елемет відеокарти
+ * Клас Processor реалізує інтерфейс IElementOfComputers, створює елемет процесора
  */
-public class VideoCard implements IElementOfComputers {
+public class Processor implements IElementOfComputers {
     /**
-     * Потужність відеокарти
+     * Потужність процесора
      */
     private double power;
 
     /**
-     * Повертає потужність відеокарти
+     * Повертає потужність процесора
      *
      * @return потужність всього компютера
      */
@@ -21,14 +21,16 @@ public class VideoCard implements IElementOfComputers {
     /**
      * Пустий конструктор
      */
-    public VideoCard() {
+    public Processor() {
         power = 100.5;
     }
 
     /**
      * Конструктор, який приймає потужність
+     *
+     * @param power потужність елемента
      */
-    public VideoCard(double power) {
+    public Processor(double power) {
         this.power = power;
     }
 

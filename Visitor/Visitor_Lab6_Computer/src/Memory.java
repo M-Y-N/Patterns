@@ -1,16 +1,16 @@
 /**
  * @author Ivan Zaichenko
  * @version 1.0
- * Клас Processor реалізує інтерфейс IElementOfComputers, створює елемет процесора
+ * Клас Memory реалізує інтерфейс IElementOfComputers, створює елемет память
  */
-public class Processor implements IElementOfComputers {
+public class Memory implements IElementOfComputers {
     /**
-     * Потужність процесора
+     * Потужність памяті
      */
     private double power;
 
     /**
-     * Повертає потужність процесора
+     * Повертає потужність памяті
      *
      * @return потужність всього компютера
      */
@@ -21,14 +21,16 @@ public class Processor implements IElementOfComputers {
     /**
      * Пустий конструктор
      */
-    public Processor() {
+    public Memory() {
         power = 100.5;
     }
 
     /**
      * Конструктор, який приймає потужність
+     *
+     * @param power потужність елемента
      */
-    public Processor(double power) {
+    Memory(double power) {
         this.power = power;
     }
 

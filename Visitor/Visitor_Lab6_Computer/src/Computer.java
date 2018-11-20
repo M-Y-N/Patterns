@@ -35,14 +35,21 @@ public class Computer implements IElementOfComputers {
     }
 
     /**
-     * Конструктор, який приймає потужність
+     * Конструктор, який приймає потужність та ініціалізує список елементів для компютера
+     *
+     * @param power потужність елемента
      */
     public Computer(double power) {
         this.power = power;
+        this.elements = new IElementOfComputers[]{
+                new Memory(30),
+                new Processor(50),
+                new VideoCard(40)
+        };
     }
 
     /**
-     * Метод для дозволу ввійти візітору для всых елементыв компютера ы його самого
+     * Метод для дозволу ввійти візітору для всіх елементыв компютера і його самого
      *
      * @param visitor візітор
      */
