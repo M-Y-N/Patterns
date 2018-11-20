@@ -1,9 +1,14 @@
+/**
+ * @author Zaichenko Vasyl
+ * Головний клас, яка реалізую лабораторну роботу №6
+ */
+
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
         Panel panel = new Panel();
-        ArrayList<Element> buttons = new ArrayList<>();
+        ArrayList<IElement> buttons = new ArrayList<>();
         buttons.add(new BasicButton());
         buttons.add(new BasicButton());
         buttons.add(new BasicButton());

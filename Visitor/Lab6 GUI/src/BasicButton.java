@@ -1,6 +1,15 @@
-public class BasicButton implements Element {
+/**
+ * @author Zaichenko Vasyl
+ * Клас BasicButton який реалізує інтерфейс IElement
+ */
+public class BasicButton implements IElement {
+    /**
+     * Перевизначений метод прийняття відвідувача
+     *
+     * @param visitor - загальний відвідувач
+     */
     @Override
-    public void accept(Visitor visitor) {
+    public void accept(IVisitor visitor) {
         visitor.visit(this);
     }
 }

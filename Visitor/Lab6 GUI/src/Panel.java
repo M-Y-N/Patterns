@@ -1,22 +1,49 @@
+/**
+ * @author Zaichenko Vasyl
+ * Клас Panel який реалізує інтерфейс IElement
+ */
+
 import java.util.ArrayList;
 
-public class Panel implements Element{
-    private ArrayList<Element> buttons = new ArrayList<>();
+public class Panel implements IElement {
+    /**
+     * Ліст кнопок на панелі
+     */
+    private ArrayList<IElement> buttons = new ArrayList<>();
 
-    public Panel() { }
+    /**
+     * Пустий конструктор
+     */
+    public Panel() {
+    }
 
-    public void addButton(Element button){
+    /**
+     * Добавляння одного обєкта кнопки в ліст
+     *
+     * @param button - кнопку, яку потрібно добавити в ліст
+     */
+    public void addButton(IElement button) {
         buttons.add(button);
     }
 
-    public void addButtons(ArrayList<Element> buttonsAdd){
-        for(Element element : buttonsAdd)
+    /**
+     * Добавляння ліста обєктів кнопок в ліст
+     *
+     * @param buttonsAdd - кнопки, які потрібно добавити в ліст
+     */
+    public void addButtons(ArrayList<IElement> buttonsAdd) {
+        for (IElement element : buttonsAdd)
             addButton(element);
     }
 
+    /**
+     * Перевизначений метод прийняття відвідувача
+     *
+     * @param visitor - загальний відвідувач
+     */
     @Override
-    public void accept(Visitor visitor) {
-        for(Element element : buttons)
+    public void accept(IVisitor visitor) {
+        for (IElement element : buttons)
             element.accept(visitor);
         visitor.visit(this);
     }
