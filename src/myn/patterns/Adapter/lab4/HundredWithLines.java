@@ -1,4 +1,4 @@
-package myn.patterns.Adapter.lab4;
+package myn.patterns.adapter.lab4;
 
 public class HundredWithLines extends Line implements IHundredWithLines {
     private double[] arrayX;

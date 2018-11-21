@@ -1,4 +1,4 @@
-package myn.patterns.Observer.dbtrigger;
+package myn.patterns.observer.dbtrigger;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package myn.patterns.Adapter.dot_to_line;
+package myn.patterns.adapter.dot_to_line;
 
 
 /**

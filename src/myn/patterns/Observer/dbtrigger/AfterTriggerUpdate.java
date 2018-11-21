@@ -1,5 +1,4 @@
-package myn.patterns.Observer.dbtrigger;
-
+package myn.patterns.observer.dbtrigger;
 /**
  * @author Zaichenko Vasyl
  * Клас підписник AfterTrigger який реалізує інтерфейс Trigger
