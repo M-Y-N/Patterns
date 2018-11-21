@@ -1,4 +1,5 @@
-package myn.patterns.Visitor.visitor;
+package myn.patterns.visitor.visitor;
+
 
 import java.util.ArrayList;
 /**

@@ -1,4 +1,4 @@
-package myn.patterns.proxy.proxy.src.proxy;
+package myn.patterns.proxy.proxy;
 
 /**
  * @author Tsaruk Vova

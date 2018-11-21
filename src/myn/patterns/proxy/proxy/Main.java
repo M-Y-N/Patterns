@@ -1,9 +1,9 @@
-package myn.patterns.proxy.proxy.src.proxy;
+package myn.patterns.proxy.proxy;
+
 /**
  * @author Tsaruk Vova
  * Головний клас
  */
-
 public class Main {
 
     public static void main(String[] args) {

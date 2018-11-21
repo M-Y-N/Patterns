@@ -1,6 +1,5 @@
 package myn.patterns.adapter.dot_to_line;
 
-
 /**
  * @author Zaichenko Vasyl
  * Інтерфейс для точки

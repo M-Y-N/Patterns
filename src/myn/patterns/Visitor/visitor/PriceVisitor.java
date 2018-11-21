@@ -1,4 +1,5 @@
-package myn.patterns.Visitor.visitor;
+package myn.patterns.visitor.visitor;
+
 
 /**
  * @author Tsaruk Vova

@@ -1,4 +1,4 @@
-package myn.patterns.iterator.lab5_iterator.src;
+package myn.patterns.iterator.lab5_iterator;
 
 import java.util.ArrayList;
 import java.util.Arrays;

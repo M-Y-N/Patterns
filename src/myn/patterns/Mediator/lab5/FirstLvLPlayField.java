@@ -1,4 +1,4 @@
-package myn.patterns.Mediator.lab5;
+package myn.patterns.mediator.lab5;
 
 import java.util.ArrayList;
 import java.util.List;

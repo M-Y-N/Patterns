@@ -1,18 +1,17 @@
-package myn.patterns.Visitor.lab6_computer.src;
-
+package myn.patterns.visitor.lab6_computer;
 /**
  * @author Ivan Zaichenko
  * @version 1.0
- * Клас Processor реалізує інтерфейс IElementOfComputers, створює елемет процесора
+ * Клас VideoCard реалізує інтерфейс IElementOfComputers, створює елемет відеокарти
  */
-public class Processor implements IElementOfComputers {
+public class VideoCard implements IElementOfComputers {
     /**
-     * Потужність процесора
+     * Потужність відеокарти
      */
     private double power;
 
     /**
-     * Повертає потужність процесора
+     * Повертає потужність відеокарти
      *
      * @return потужність всього компютера
      */
@@ -23,7 +22,7 @@ public class Processor implements IElementOfComputers {
     /**
      * Пустий конструктор
      */
-    public Processor() {
+    public VideoCard() {
         power = 100.5;
     }
 
@@ -32,7 +31,7 @@ public class Processor implements IElementOfComputers {
      *
      * @param power потужність елемента
      */
-    public Processor(double power) {
+    public VideoCard(double power) {
         this.power = power;
     }
 
