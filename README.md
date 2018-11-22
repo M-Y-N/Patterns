@@ -3,6 +3,7 @@ Some Java labs that are using patterns
 Links:
 * [Adapter](src/myn/patterns/adapter)
 * [Composite](src/myn/patterns/composite) 
+* [Interpreter](src/myn/patterns/interpreter)
 * [Iterator](src/myn/patterns/iterator)
 * [Observer](src/myn/patterns/observer)
 * [Proxy](src/myn/patterns/proxy)
