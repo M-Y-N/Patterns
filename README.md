@@ -1,7 +1,9 @@
 # Patterns
 Some Java labs that are using patterns
+
 Links:
 * [Adapter](src/myn/patterns/adapter)
+* [Builder](src/myn/patterns/builder)
 * [Composite](src/myn/patterns/composite) 
 * [Iterator](src/myn/patterns/iterator)
 * [Observer](src/myn/patterns/observer)
