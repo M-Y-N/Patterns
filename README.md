@@ -11,3 +11,4 @@ Links:
 * [Proxy](src/myn/patterns/proxy)
 * [Visitor](src/myn/patterns/visitor)
 * [Mediator](src/myn/patterns/mediator)
+* [Memento](src/myn/patterns/memento)
