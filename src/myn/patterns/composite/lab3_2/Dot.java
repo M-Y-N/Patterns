@@ -24,7 +24,7 @@ public class Dot extends BaseShape {
     @Override
     public void paint() {
         System.out.println(String.format("Paint DOT with parametrs : X = %s, Y = %s, Width = %s, Height = %s.",
-                getX(), getY(), getWidth(), getHeight()));
+            getX(), getY(), getWidth(), getHeight()));
     }
 
 //    /**
@@ -45,7 +45,7 @@ public class Dot extends BaseShape {
     @Override
     public CompoundShape add(BaseShape component) {
 
-        return new CompoundShape(this,component);
+        return new CompoundShape(this, component);
     }
 
 }

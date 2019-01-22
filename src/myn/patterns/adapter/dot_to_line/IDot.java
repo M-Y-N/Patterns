@@ -18,5 +18,6 @@ public interface IDot {
      * @param y - y координата точки
      */
     void setY(int y);
+
     void draw(int x, int y);
 }

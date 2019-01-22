@@ -1,11 +1,13 @@
 package myn.patterns.mediator.lab5;
+
 /**
  * Абстрактний класс Cell для медіатора
  */
 abstract class Cell {
     PlayField playField;
     String name;
-    boolean isActive= true;
+    boolean isActive = true;
+
     /**
      * Конструктор на заповнення певних кліток
      */
@@ -13,6 +15,7 @@ abstract class Cell {
         this.playField = playField;
         this.name = name;
     }
+
     /**
      * Наявність минулого елементу
      *
@@ -21,6 +24,7 @@ abstract class Cell {
     public String getName() {
         return name;
     }
+
     /**
      * Показую активність клітки
      */

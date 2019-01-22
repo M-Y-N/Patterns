@@ -1,4 +1,5 @@
 package myn.patterns.visitor.lab6_computer;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0

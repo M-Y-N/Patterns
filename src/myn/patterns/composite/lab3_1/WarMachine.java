@@ -7,9 +7,12 @@ package myn.patterns.composite.lab3_1;
  * Загальний інтерфейс компонентів.
  */
 public interface WarMachine {
-    public void findSquare();
-    public int getWeight();
-    public int getHeight();
-    public int superSquare();
+    void findSquare();
+
+    int getWeight();
+
+    int getHeight();
+
+    int superSquare();
 
 }

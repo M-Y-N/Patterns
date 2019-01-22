@@ -10,20 +10,22 @@ public class ManipulateImage implements IManipulateImage {
         this.colors = colors.clone();
     }
 
-    private Color[][] colors ;
+    private Color[][] colors;
 
-    public Color getIndex(int x,int y){
+    public Color getIndex(int x, int y) {
         return colors[x][y];
     }
+
     /**
      * Перевизначений метод знаходження кольору
+     *
      * @param x - x координата
      * @param y - y координата
      * @return колір по заданим координатам
      */
     @Override
-    public Color findColor(int x, int y){
+    public Color findColor(int x, int y) {
         System.out.println(String.format("Find color with parameters: X = %s, Y = %s", x, y));
-        return  Color.Purple;
+        return Color.Purple;
     }
 }

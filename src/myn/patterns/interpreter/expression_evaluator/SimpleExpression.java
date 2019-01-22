@@ -117,6 +117,6 @@ public class SimpleExpression implements Expression {
         if (isConstant()) {
             return value;
         }
-       return context.getVariable(name);
+        return context.getVariable(name);
     }
 }

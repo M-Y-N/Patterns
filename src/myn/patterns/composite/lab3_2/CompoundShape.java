@@ -1,8 +1,8 @@
 package myn.patterns.composite.lab3_2;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.ArrayList;
 
 /**
  * @author Ivan Zaichenko
@@ -53,8 +53,7 @@ public class CompoundShape extends BaseShape {
      */
 
     public CompoundShape remove(BaseShape child) {
-        int i = children.indexOf(child);
-        children.remove(i);
+        children.remove(child);
         return this;
     }
 
@@ -150,7 +149,7 @@ public class CompoundShape extends BaseShape {
         System.out.println();
         System.out.println("CompoundShape start: ");
         System.out.println(String.format("Paint CompoundShape with parametrs : X = %s, Y = %s, Width = %s, Height = %s.",
-                getX(), getY(), getWidth(), getHeight()));
+            getX(), getY(), getWidth(), getHeight()));
         System.out.println("CompoundShape consist of this components :");
         for (BaseShape child : children) {
             child.paint();

@@ -2,6 +2,7 @@ package myn.patterns.visitor.visitor;
 
 
 import java.util.ArrayList;
+
 /**
  * @author Tsaruk Vova
  * Головний клас, яка реалізую лабораторну роботу №6
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<Element>goods=new ArrayList<>();
+        ArrayList<Element> goods = new ArrayList<>();
         WorkstationElement workstation = new WorkstationElement(5000);
 
         Element cable1 = new CableElement(400);
@@ -26,8 +27,8 @@ public class Main {
         goods.add(server2);
 
         workstation.addElements(goods);
-         Visitor visitor=new PriceVisitor();
-         workstation.accept(visitor);
+        Visitor visitor = new PriceVisitor();
+        workstation.accept(visitor);
         System.out.println(visitor.toString());
     }
 }

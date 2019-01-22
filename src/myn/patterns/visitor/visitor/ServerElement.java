@@ -10,6 +10,7 @@ public class ServerElement implements Element {
      * priceServer ціна сервера
      */
     int priceServer;
+
     /**
      * Конструктор який встановлює ціну сервера
      */

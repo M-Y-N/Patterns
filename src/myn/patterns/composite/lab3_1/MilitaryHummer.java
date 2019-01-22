@@ -5,9 +5,10 @@ package myn.patterns.composite.lab3_1;
  * @version 1.0
  * Клас MilitaryHummer який наслідується від Hummer
  */
-public class MilitaryHummer extends  Hummer {
+public class MilitaryHummer extends Hummer {
     /**
      * Конструктор MilitaryHummer з параметрами
+     *
      * @param height - висота
      * @param weigh  - ширина
      */

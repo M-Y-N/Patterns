@@ -59,10 +59,10 @@ public class CounterVisitor implements IVisitor {
     @Override
     public String toString() {
         return "CounterVisitor{" +
-                "countBasicButton=" + countBasicButton +
-                ", countBigButton=" + countBigButton +
-                ", countGoldButton=" + countGoldButton +
-                ", countPanel=" + countPanel +
-                '}';
+            "countBasicButton=" + countBasicButton +
+            ", countBigButton=" + countBigButton +
+            ", countGoldButton=" + countGoldButton +
+            ", countPanel=" + countPanel +
+            '}';
     }
 }

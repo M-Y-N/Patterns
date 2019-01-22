@@ -58,11 +58,11 @@ public class Square extends BaseShape {
     @Override
     public String toString() {
         return "Square{" +
-                "side=" + side +
-                ", x=" + x +
-                ", y=" + y +
-                ", color=" + color +
-                '}';
+            "side=" + side +
+            ", x=" + x +
+            ", y=" + y +
+            ", color=" + color +
+            '}';
     }
 
     /**

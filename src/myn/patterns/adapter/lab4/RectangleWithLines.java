@@ -41,10 +41,10 @@ public class RectangleWithLines extends Line implements IRectangle {
         double y2 = -this.y2;
 
         System.out.println("Rectangle consist of : ");
-        draw(x1, y1, x2, y1,coordinate);
-        draw(x2, y1, x2, y2,coordinate);
-        draw(x2, y2, x1, y2,coordinate);
-        draw(x1, y2, x1, y1,coordinate);
+        draw(x1, y1, x2, y1, coordinate);
+        draw(x2, y1, x2, y2, coordinate);
+        draw(x2, y2, x1, y2, coordinate);
+        draw(x1, y2, x1, y1, coordinate);
 
     }
 }

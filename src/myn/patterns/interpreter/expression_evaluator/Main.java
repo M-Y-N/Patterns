@@ -13,13 +13,13 @@ public class Main {
     public static void main(String[] args) {
         // expression -x + 3 * y
         Expression expression = new ComplexExpression(
-                new NegationExpression( new SimpleExpression("x")),
-                Operation.PLUS,
-                new ComplexExpression(
-                        new SimpleExpression(3.0),
-                        Operation.MULT,
-                        new SimpleExpression("y")
-                ));
+            new NegationExpression(new SimpleExpression("x")),
+            Operation.PLUS,
+            new ComplexExpression(
+                new SimpleExpression(3.0),
+                Operation.MULT,
+                new SimpleExpression("y")
+            ));
         System.out.println(expression);
         EvaluationContext context = new EvaluationContext();
         context.setVariable("x", 10);

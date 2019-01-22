@@ -26,8 +26,8 @@ public class BeforeTriggerUpdate implements Trigger {
      */
     @Override
     public void handleEvent(int value) throws Exception {
-        if(value >=0 && value<= triggerValue)
-            System.out.println("Update Trigger " + nameTrigger+ " Before: value correct for triggerValue - "+triggerValue);
+        if (value >= 0 && value <= triggerValue)
+            System.out.println("Update Trigger " + nameTrigger + " Before: value correct for triggerValue - " + triggerValue);
         else throw new Exception("Value Incorrect");
     }
 }

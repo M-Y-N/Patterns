@@ -1,6 +1,5 @@
 package myn.patterns.memento;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -43,7 +42,7 @@ public class VectorRedactor {
         for (BaseShape element : statusRedactor.baseShapes) {
             System.out.println(element);
         }
-        System.out.println("");
+        System.out.println();
     }
 
     /**
@@ -169,9 +168,9 @@ public class VectorRedactor {
         @Override
         public String toString() {
             return "StatusRedactor{" +
-                    "backgroundVectorRedactor=" + backgroundVectorRedactor +
-                    ", fullScreen=" + fullScreen +
-                    '}';
+                "backgroundVectorRedactor=" + backgroundVectorRedactor +
+                ", fullScreen=" + fullScreen +
+                '}';
         }
 
         /**

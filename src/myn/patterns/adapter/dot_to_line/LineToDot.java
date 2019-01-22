@@ -4,7 +4,7 @@ package myn.patterns.adapter.dot_to_line;
  * @author Zaichenko Vasyl
  * Клас Adapter який реалізує ILine та має обєкти класу Dot
  */
-public class LineToDot extends Dot implements ILine  {
+public class LineToDot extends Dot implements ILine {
     private double x1;
     private double y1;
     private double x2;
@@ -53,7 +53,7 @@ public class LineToDot extends Dot implements ILine  {
      */
     @Override
     public void setX1(double x) {
-        x1Dot = (int)x;
+        x1Dot = (int) x;
         int xInt = (int) x / smToPixel;
         setX(xInt);
         x1 = getX();
@@ -66,7 +66,7 @@ public class LineToDot extends Dot implements ILine  {
      */
     @Override
     public void setY1(double y) {
-        y1Dot = (int)y;
+        y1Dot = (int) y;
         int yInt = (int) y / smToPixel;
         setY(yInt);
         y1 = getY();
@@ -79,7 +79,7 @@ public class LineToDot extends Dot implements ILine  {
      */
     @Override
     public void setX2(double x) {
-        x2Dot = (int)x;
+        x2Dot = (int) x;
         int xInt = (int) x / smToPixel;
         setX(xInt);
         x2 = getX();
@@ -92,7 +92,7 @@ public class LineToDot extends Dot implements ILine  {
      */
     @Override
     public void setY2(double y) {
-        y2Dot = (int)y;
+        y2Dot = (int) y;
         int yInt = (int) y / smToPixel;
         setY(yInt);
         y2 = getY();
@@ -106,8 +106,8 @@ public class LineToDot extends Dot implements ILine  {
         System.out.println("Method draw in Adapter class");
         draw(x1Dot, y1Dot);
         draw(x2Dot, y2Dot);
-        System.out.println("First Dot in sm : (" +x1+ ", "+y1+")");
-        System.out.println("Second Dot in sm : (" +x2+ ", "+y2+")");
+        System.out.println("First Dot in sm : (" + x1 + ", " + y1 + ")");
+        System.out.println("Second Dot in sm : (" + x2 + ", " + y2 + ")");
         return Math.sqrt(Math.pow(y2 - y1, 2) + Math.pow(x2 - x1, 2));
     }
 }

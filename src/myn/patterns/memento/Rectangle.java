@@ -68,12 +68,12 @@ public class Rectangle extends BaseShape {
     @Override
     public String toString() {
         return "Rectangle{" +
-                "length=" + length +
-                ", width=" + width +
-                ", x=" + x +
-                ", y=" + y +
-                ", color=" + color +
-                '}';
+            "length=" + length +
+            ", width=" + width +
+            ", x=" + x +
+            ", y=" + y +
+            ", color=" + color +
+            '}';
     }
 
     /**

@@ -5,9 +5,10 @@ package myn.patterns.composite.lab3_1;
  * @version 1.0
  * Клас MedicalHummer який наслідується від Hummer
  */
-public class MedicalHummer extends  Hummer {
+public class MedicalHummer extends Hummer {
     /**
      * Конструктор MedicalHummer з параметрами
+     *
      * @param height - висота
      * @param weigh  - ширина
      */

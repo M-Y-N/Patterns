@@ -77,13 +77,13 @@ public class Triangle extends BaseShape {
     @Override
     public String toString() {
         return "Triangle{" +
-                "firstSide=" + firstSide +
-                ", secondSide=" + secondSide +
-                ", thirdSide=" + thirdSide +
-                ", x=" + x +
-                ", y=" + y +
-                ", color=" + color +
-                '}';
+            "firstSide=" + firstSide +
+            ", secondSide=" + secondSide +
+            ", thirdSide=" + thirdSide +
+            ", x=" + x +
+            ", y=" + y +
+            ", color=" + color +
+            '}';
     }
 
     /**

@@ -70,7 +70,7 @@ public class Facade {
         }
     }
 
-    public void contains (Directory directory){
+    public void contains(Directory directory) {
         System.out.println("Hierarchy :");
         directory.contains(directory);
     }
