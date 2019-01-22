@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 import java.util.Stack;
 
 /**
@@ -22,7 +23,7 @@ public class HistoryPreviousStatus {
     /**
      * Повертає збережені дані
      *
-     * @param vectorRedactor  обєкт отримувач
+     * @param vectorRedactor об'єкт отримувач
      */
     public void getPreviousStatus(VectorRedactor vectorRedactor) {
         vectorRedactor.load(previousStatuses.pop());

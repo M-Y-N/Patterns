@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0
@@ -6,24 +7,24 @@ package myn.patterns.memento;
  */
 public class Triangle extends BaseShape {
     /**
-     * 1 Сторона фігури
+     * 1-ша сторона фігури
      */
     private int firstSide;
 
     /**
-     * 2 Сторона фігури
+     * 2-га сторона фігури
      */
     private int secondSide;
 
     /**
-     * 3 Сторона фігури
+     * 3-тя сторона фігури
      */
     private int thirdSide;
 
     /**
-     * Kонструктор, який приймає обєкт для клонування
+     * Конструктор, який приймає об'єкт для клонування
      *
-     * @param triangle обєкт для клонування
+     * @param triangle об'єкт для клонування
      */
     public Triangle(Triangle triangle) {
         super(triangle);
@@ -38,9 +39,9 @@ public class Triangle extends BaseShape {
      * @param x          координата фігури
      * @param y          координата фігури
      * @param color      колір фігури
-     * @param firstSide  сторона фігури
-     * @param secondSide сторона фігури
-     * @param thirdSide  сторона фігури
+     * @param firstSide  перша сторона фігури
+     * @param secondSide друга сторона фігури
+     * @param thirdSide  третя сторона фігури
      */
     Triangle(int x, int y, Color color, int firstSide, int secondSide, int thirdSide) {
         super(x, y, color);
@@ -55,9 +56,9 @@ public class Triangle extends BaseShape {
      * @param x          координата фігури
      * @param y          координата фігури
      * @param color      колір фігури
-     * @param firstSide  сторона фігури
-     * @param secondSide сторона фігури
-     * @param thirdSide  сторона фігури
+     * @param firstSide  перша сторона фігури
+     * @param secondSide друга сторона фігури
+     * @param thirdSide  третя сторона фігури
      */
     public void setFields(int x, int y, Color color, int firstSide, int secondSide, int thirdSide) {
         this.x = x;

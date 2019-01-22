@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0
@@ -8,7 +9,7 @@ public interface IStatusRedactor {
     /**
      * Метод для знання імені
      *
-     * @return імя копії
+     * @return ім'я копії
      */
     String getName();
 }

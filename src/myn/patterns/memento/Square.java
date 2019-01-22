@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0
@@ -11,9 +12,9 @@ public class Square extends BaseShape {
     private int side;
 
     /**
-     * Kонструктор, який приймає обєкт для клонування
+     * Конструктор, який приймає об'єкт для клонування
      *
-     * @param square обєкт для клонування
+     * @param square об'єкт для клонування
      */
     public Square(Square square) {
         super(square);

@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0
@@ -19,12 +20,12 @@ public abstract class BaseShape {
     protected Color color;
 
     /**
-     * Kонструктор, який приймає обєкт для клонування
+     * Конструктор, який приймає об'єкт для клонування
      *
-     * @param baseShape обєкт для клонування
+     * @param baseShape об'єкт для клонування
      */
     BaseShape(BaseShape baseShape) {
-        if(baseShape==null)
+        if (baseShape == null)
             throw new NullPointerException();
         this.x = baseShape.x;
         this.y = baseShape.y;

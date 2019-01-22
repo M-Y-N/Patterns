@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0

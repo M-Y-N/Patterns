@@ -1,12 +1,13 @@
 package myn.patterns.memento;
+
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * @author Ivan Zaichenko
  * @version 1.0
- * Клас VectorRedactor як обєкт для зберігання
+ * Клас VectorRedactor як об'єкт для зберігання
  */
 public class VectorRedactor {
     /**
@@ -61,20 +62,17 @@ public class VectorRedactor {
      * @param previousStatus дані для зберігання
      */
     public void load(IStatusRedactor previousStatus) {
-        if(previousStatus instanceof StatusRedactor) {
-            this.statusRedactor = (StatusRedactor) previousStatus;
-        }
-        else
+        if (!(previousStatus instanceof StatusRedactor))
             throw new ClassCastException();
+        this.statusRedactor = (StatusRedactor) previousStatus;
     }
 
     /**
      * Метод для зберігання даних в історії
      */
     public void load(HistoryPreviousStatus history) {
-           history.getPreviousStatus(this);
+        history.getPreviousStatus(this);
     }
-
 
 
     /**
@@ -99,7 +97,7 @@ public class VectorRedactor {
     /**
      * @author Ivan Zaichenko
      * @version 1.0
-     * Клас StatusRedactor створює копію обєкту
+     * Клас StatusRedactor створює копію об'єкту
      */
     private class StatusRedactor implements IStatusRedactor {
         /**
@@ -107,7 +105,7 @@ public class VectorRedactor {
          */
         private ArrayList<BaseShape> baseShapes;
         /**
-         * Імя копії
+         * Ім'я копії
          */
         final String dateSave;
         /**
@@ -135,10 +133,10 @@ public class VectorRedactor {
         /**
          * Конструктор, для клонування
          *
-         * @param statusRedactor обєкт для клонування
+         * @param statusRedactor об'єкт для клонування
          */
         StatusRedactor(StatusRedactor statusRedactor) {
-            if(statusRedactor==null)
+            if (statusRedactor == null)
                 throw new NullPointerException();
             this.baseShapes = new ArrayList<>();
 
@@ -149,15 +147,14 @@ public class VectorRedactor {
             this.backgroundVectorRedactor = statusRedactor.backgroundVectorRedactor;
             this.fullScreen = statusRedactor.fullScreen;
 
-            Date dateNow = new Date();
-            SimpleDateFormat formatForDateNow = new SimpleDateFormat("E yyyy.MM.dd 'і час' hh:mm:ss a");
-            this.dateSave = formatForDateNow.format(dateNow);
+            LocalDateTime dateNow = LocalDateTime.now();
+            this.dateSave = dateNow.toString();
         }
 
         /**
          * Метод для знання імені
          *
-         * @return імя копії
+         * @return ім'я копії
          */
         @Override
         public String getName() {

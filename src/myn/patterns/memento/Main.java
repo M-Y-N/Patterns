@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0
@@ -6,7 +7,7 @@ package myn.patterns.memento;
  */
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Rectangle rectangle = new Rectangle(1, 2, Color.Red, 3, 4);
         Square square = new Square(3, 4, Color.Green, 5);

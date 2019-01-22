@@ -1,4 +1,5 @@
 package myn.patterns.memento;
+
 /**
  * @author Ivan Zaichenko
  * @version 1.0
@@ -16,9 +17,9 @@ public class Rectangle extends BaseShape {
     private int width;
 
     /**
-     * Kонструктор, який приймає обєкт для клонування
+     * Конструктор, який приймає об'єкт для клонування
      *
-     * @param rectangle обєкт для клонування
+     * @param rectangle об'єкт для клонування
      */
     public Rectangle(Rectangle rectangle) {
         super(rectangle);
