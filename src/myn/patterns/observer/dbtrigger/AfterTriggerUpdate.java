@@ -1,4 +1,5 @@
 package myn.patterns.observer.dbtrigger;
+
 /**
  * @author Zaichenko Vasyl
  * Клас підписник AfterTrigger який реалізує інтерфейс Trigger
@@ -26,8 +27,8 @@ public class AfterTriggerUpdate implements Trigger {
      */
     @Override
     public void handleEvent(int value) throws Exception {
-        if(value >=0 && value<= triggerValue)
-            System.out.println("Update Trigger "+nameTrigger+" After: value correct");
+        if (value >= 0 && value <= triggerValue)
+            System.out.println("Update Trigger " + nameTrigger + " After: value correct");
         else throw new Exception("Value Incorrect");
     }
 }

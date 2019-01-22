@@ -85,6 +85,7 @@ public class ManagementSystem implements IObserved {
             element.handleEvent(value);
         }
     }
+
     @Override
     public void notifyAfterObserverUpdate() throws Exception {
         for (Trigger element : afterTriggerUpdate) {
@@ -108,7 +109,7 @@ public class ManagementSystem implements IObserved {
     public void Insert(int valueCurr) throws Exception {
         notifyBeforeObserverInsert();
         value = valueCurr;
-        System.out.println("Method INSERT, value = "+ valueCurr);
+        System.out.println("Method INSERT, value = " + valueCurr);
         notifyAfterObserverInsert();
         System.out.println();
     }
@@ -124,13 +125,14 @@ public class ManagementSystem implements IObserved {
 //        System.out.println();
 //    }
 //
+
     /**
      * Заглушений метод Update
      */
     public void Update(int valueCurr) throws Exception {
         notifyBeforeObserverUpdate();
-        value+=valueCurr;
-        System.out.println("Method UPDATE, value = "+value);
+        value += valueCurr;
+        System.out.println("Method UPDATE, value = " + value);
         notifyAfterObserverUpdate();
         System.out.println();
     }

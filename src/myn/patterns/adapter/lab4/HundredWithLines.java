@@ -20,16 +20,16 @@ public class HundredWithLines extends Line implements IHundredWithLines {
         double[] arrayXsecondCoordinate = new double[arrayX.length];
         double[] arrayYsecondCoordinate = new double[arrayY.length];
         for (int i = 0; i < arrayX.length; i++) {
-            arrayXsecondCoordinate[i] = this.arrayX[i] - widthMonitor / 2  ;
+            arrayXsecondCoordinate[i] = this.arrayX[i] - widthMonitor / 2;
             arrayYsecondCoordinate[i] = -this.arrayY[i];
         }
 
         System.out.println("HundredCorn consist of : ");
-        for (int i=0; i<arrayX.length; i+=2) {
-            draw(arrayXsecondCoordinate[i], arrayYsecondCoordinate[i], arrayXsecondCoordinate[i+1],
-                    arrayYsecondCoordinate[i], coordinate);
-            draw(arrayXsecondCoordinate[i+1], arrayYsecondCoordinate[i], arrayXsecondCoordinate[i+1],
-                    arrayYsecondCoordinate[i+1], coordinate);
+        for (int i = 0; i < arrayX.length; i += 2) {
+            draw(arrayXsecondCoordinate[i], arrayYsecondCoordinate[i], arrayXsecondCoordinate[i + 1],
+                arrayYsecondCoordinate[i], coordinate);
+            draw(arrayXsecondCoordinate[i + 1], arrayYsecondCoordinate[i], arrayXsecondCoordinate[i + 1],
+                arrayYsecondCoordinate[i + 1], coordinate);
         }
     }
 }

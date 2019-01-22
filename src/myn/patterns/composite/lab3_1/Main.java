@@ -11,7 +11,7 @@ public class Main {
         MedicalHummer medHummer = new MedicalHummer(2, 6);
         MilitaryHummer milHummer = new MilitaryHummer(2, 4);
         LevelsWithHummers levelOne = new LevelsWithHummers(hummer, medHummer, milHummer);
-        LevelsWithHummers levelTwo = new LevelsWithHummers(levelOne, new MilitaryHummer(3,7), new MilitaryHummer(5, 8));
+        LevelsWithHummers levelTwo = new LevelsWithHummers(levelOne, new MilitaryHummer(3, 7), new MilitaryHummer(5, 8));
 
         levelTwo.findSquare();
     }

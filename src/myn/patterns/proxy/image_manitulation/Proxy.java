@@ -16,12 +16,13 @@ public class Proxy implements IManipulateImage {
 
     /**
      * Перевизначений метод знаходження кольору
+     *
      * @param x - x координата
      * @param y - y координата
      * @return колір по заданим координатам
      */
     @Override
-    public Color findColor(double x, double y)  {
+    public Color findColor(double x, double y) {
         System.out.println("Transparent hashing");
         return manipulateImage.findColor(x, y);
     }

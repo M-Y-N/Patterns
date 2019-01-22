@@ -30,9 +30,9 @@ public class Computer implements IElementOfComputers {
     Computer() {
         power = 100.5;
         this.elements = new IElementOfComputers[]{
-                new Memory(30),
-                new Processor(50),
-                new VideoCard(40)
+            new Memory(30),
+            new Processor(50),
+            new VideoCard(40)
         };
     }
 
@@ -44,9 +44,9 @@ public class Computer implements IElementOfComputers {
     public Computer(double power) {
         this.power = power;
         this.elements = new IElementOfComputers[]{
-                new Memory(30),
-                new Processor(50),
-                new VideoCard(40)
+            new Memory(30),
+            new Processor(50),
+            new VideoCard(40)
         };
     }
 
@@ -58,7 +58,7 @@ public class Computer implements IElementOfComputers {
     @Override
     public void accept(IVisitor visitor) {
         for (IElementOfComputers elementsOfComputer : elements
-                ) {
+        ) {
             elementsOfComputer.accept(visitor);
         }
         visitor.visit(this);

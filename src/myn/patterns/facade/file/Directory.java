@@ -77,6 +77,6 @@ class Directory {
                     directorysIn[i].contains(directorysIn[i]);
             }
         }
-        System.out.println("End directory "+ path);
+        System.out.println("End directory " + path);
     }
 }

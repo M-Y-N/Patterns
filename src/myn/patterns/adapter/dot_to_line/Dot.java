@@ -65,6 +65,6 @@ public class Dot implements IDot {
     @Override
     public void draw(int x, int y) {
         System.out.println("Method draw in Dot class");
-        System.out.println("Dot in pixel: ("+x+", "+y+")");
+        System.out.println("Dot in pixel: (" + x + ", " + y + ")");
     }
 }

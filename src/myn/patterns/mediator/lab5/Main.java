@@ -27,11 +27,11 @@ public class Main {
 
         System.out.println("Changes: ");
         playField.changeActive(false, green1);
-        System.out.println("");
+        System.out.println();
         playField.changeActive(false, red1);
-        System.out.println("");
+        System.out.println();
         playField.changeActive(true, red2);
-        System.out.println("");
+        System.out.println();
 
         System.out.println("last Version");
         playField.print();

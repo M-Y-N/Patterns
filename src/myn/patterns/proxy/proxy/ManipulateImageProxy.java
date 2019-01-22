@@ -10,7 +10,6 @@ public class ManipulateImageProxy implements IManipulateImage {
     private Color[][] cache = new Color[2][3];
 
 
-
     public ManipulateImageProxy(ManipulateImage manipulateImage) {
         largeImage = manipulateImage;
     }
@@ -18,6 +17,7 @@ public class ManipulateImageProxy implements IManipulateImage {
 
     /**
      * Перевизначений метод знаходження кольору
+     *
      * @param x - x координата
      * @param y - y координата
      * @return колір по заданим координатам
@@ -25,7 +25,7 @@ public class ManipulateImageProxy implements IManipulateImage {
     @Override
     public Color findColor(int x, int y) {
 
-        if ( cache[x][y] != null) {
+        if (cache[x][y] != null) {
             return cache[x][y];
         }
         cache[x][y] = largeImage.getIndex(x, y);

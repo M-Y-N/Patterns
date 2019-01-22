@@ -25,6 +25,6 @@ public class Circle extends Dot {
     @Override
     public void paint() {
         System.out.println(String.format("Paint CIRCLE with parametrs : X = %s, Y = %s, Width = %s, Height = %s.",
-                getX(), getY(), getWidth(), getHeight()));
+            getX(), getY(), getWidth(), getHeight()));
     }
 }

@@ -6,14 +6,14 @@ package myn.patterns.proxy.image_manitulation;
  */
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ManipulateImage manipulateImage = new ManipulateImage();
-	    Proxy proxy = new Proxy(manipulateImage);
+        Proxy proxy = new Proxy(manipulateImage);
 
         System.out.println("\nWihtout proxy:");
-        System.out.println(manipulateImage.findColor(2,5));
+        System.out.println(manipulateImage.findColor(2, 5));
 
         System.out.println("Wiht proxy:");
-        System.out.println(proxy.findColor(3,6));
+        System.out.println(proxy.findColor(3, 6));
     }
 }

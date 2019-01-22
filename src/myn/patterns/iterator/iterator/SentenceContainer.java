@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
+
 /**
  * @author Tsaruk Vova
  * @version 1.0
@@ -74,9 +75,7 @@ public class SentenceContainer implements Container {
         public boolean hasNext() {
             if (sentenceList.size() == 0)
                 throw new NoSuchElementException();
-            if (sentenceIndex < sentenceList.size())
-                return true;
-            return false;
+            return sentenceIndex < sentenceList.size();
         }
 
         /**
@@ -136,9 +135,7 @@ public class SentenceContainer implements Container {
         public boolean hasNext() {
             if (sentenceList1.size() == 0)
                 throw new NoSuchElementException();
-            if (filterIndex < sentenceList1.size())
-                return true;
-            return false;
+            return filterIndex < sentenceList1.size();
         }
 
         /**

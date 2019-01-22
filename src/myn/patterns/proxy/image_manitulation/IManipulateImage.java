@@ -7,6 +7,7 @@ package myn.patterns.proxy.image_manitulation;
 public interface IManipulateImage {
     /**
      * Метод знаходження кольору
+     *
      * @param x - x координата
      * @param y - y координата
      * @return колір по заданим координатам

@@ -14,12 +14,12 @@ public class Main {
         double[] arrayX = new double[100];
         double[] arrayY = new double[100];
 
-        for (int i=0; i<100; i++){
+        for (int i = 0; i < 100; i++) {
             arrayX[i] = i;
             arrayY[i] = i;
         }
 
-        IHundredWithLines iHundredWithLines = new HundredWithLines(arrayX,arrayY);
+        IHundredWithLines iHundredWithLines = new HundredWithLines(arrayX, arrayY);
         iHundredWithLines.draw();
     }
 }

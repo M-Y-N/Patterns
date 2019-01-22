@@ -11,19 +11,22 @@ class GreenCell extends Cell {
         super(playField, name);
     }
 
-    @Override
+
     /**
      * Перевіряє на активність червоної клітки
      */
+    @Override
     void controleActive(boolean isActive) {
         if (this.isActive != isActive)
             this.isActive = isActive;
         System.out.println("Green Cell " + getName() + " . Active is - " + isActive);
     }
-    @Override
+
+
     /**
      * Вивід на екран
      */
+    @Override
     public void print() {
         System.out.println("Green Cell" + getName() + " . Active is - " + isActive);
     }

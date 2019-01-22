@@ -40,8 +40,7 @@ public class LevelsWithHummers implements WarMachine {
      * @param machine обєкти для видаження в контейнері
      */
     public void remove(WarMachine machine) {
-        int i = warMachines.indexOf(machine);
-        warMachines.remove(i);
+        warMachines.remove(machine);
     }
 
     /**
@@ -79,14 +78,17 @@ public class LevelsWithHummers implements WarMachine {
 
     /**
      * Гетер H
+     *
      * @return повериає 0
      */
     @Override
     public int getHeight() {
         return 0;
     }
+
     /**
      * Гетер w
+     *
      * @return повериає 0
      */
     @Override
@@ -96,6 +98,7 @@ public class LevelsWithHummers implements WarMachine {
 
     /**
      * Метод для обчислиння superSquare
+     *
      * @return повертає superSquare
      */
     @Override

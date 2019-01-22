@@ -44,7 +44,7 @@ class File {
         System.out.println("The file " + path + " has been deleted.\n");
     }
 
-    public void Output (){
-        System.out.println("This file : "+ path);
+    public void Output() {
+        System.out.println("This file : " + path);
     }
 }

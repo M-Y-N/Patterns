@@ -12,6 +12,7 @@ public interface Visitor {
      * @param cableElement - елемент типу CableElement
      */
     void visit(CableElement cableElement);
+
     /**
      * Метод відвідування елемента
      *
@@ -19,6 +20,7 @@ public interface Visitor {
      */
 
     void visit(ServerElement serverElement);
+
     /**
      * Метод відвідування елемента
      *

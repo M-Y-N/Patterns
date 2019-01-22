@@ -2,6 +2,7 @@ package myn.patterns.mediator.lab5;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * @author Sienin Yuriy
  * @version 1.0
@@ -19,7 +20,6 @@ public class FirstLvLPlayField implements PlayField {
 
     /**
      * Добалення кліток
-     *
      */
     public void addCell(Cell cell) {
         if (cell instanceof GreenCell) {
@@ -29,31 +29,31 @@ public class FirstLvLPlayField implements PlayField {
         }
     }
 
-    @Override
+
     /**
      * Зміна кліток
      */
+    @Override
     public void changeActive(boolean changeActive, Cell cell) {
         if (cell instanceof GreenCell) {
             for (Cell greenCell : cellsGreenList) {
                 greenCell.controleActive(changeActive);
             }
-        }
-        else {
+        } else {
             for (Cell redCell : cellsRedList) {
                 redCell.controleActive(changeActive);
             }
         }
     }
 
-    public void print(){
-        for (int i=0; i< cellsGreenList.size(); i++) {
+    public void print() {
+        for (int i = 0; i < cellsGreenList.size(); i++) {
             cellsGreenList.get(i).print();
         }
-        for (int i=0; i< cellsRedList.size(); i++) {
+        for (int i = 0; i < cellsRedList.size(); i++) {
             cellsRedList.get(i).print();
         }
-        System.out.println("");
+        System.out.println();
     }
 
 

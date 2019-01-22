@@ -14,7 +14,7 @@ public class PrivateCollection implements IPrivateCollection {
      * Приватна колекція до якої можна доступитися лише ітератором
      */
     private ArrayList<Object> list = new ArrayList<>(
-            Arrays.asList("1KPI", null, "2Uman", "3IP-64", null, "4Java"));
+        Arrays.asList("1KPI", null, "2Uman", "3IP-64", null, "4Java"));
 
     /**
      * Пустий конструктор
