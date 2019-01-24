@@ -1,14 +1,14 @@
 package myn.patterns.decorator.GraphicRedactorDecorator;
 
-public class ReduceShape implements IShapeRedactor{
-    IShapeRedactor shape;
+public class ReduceShape extends AbstractShapeRedactor{
+    AbstractShapeRedactor shapeClon;
 
-    public ReduceShape(IShapeRedactor shape) {
-        this.shape = shape;
+    public ReduceShape(AbstractShapeRedactor shape) {
+        this.shapeClon = shape;
     }
 
     @Override
-    public void draw(IShapeRedactor shape) {
+    public void draw(AbstractShapeRedactor shape) {
         shape.size = shape.size / 2;
         shape.draw(shape);
     }

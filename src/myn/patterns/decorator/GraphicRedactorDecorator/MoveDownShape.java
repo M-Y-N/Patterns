@@ -1,10 +1,10 @@
 package myn.patterns.decorator.GraphicRedactorDecorator;
 
 public class MoveDownShape extends AbstractShapeRedactor {
-    AbstractShapeRedactor shape;
+    public AbstractShapeRedactor shapeClon;
 
     public MoveDownShape(AbstractShapeRedactor shape) {
-        this.shape = shape;
+        this.shapeClon = shape;
     }
 
     @Override

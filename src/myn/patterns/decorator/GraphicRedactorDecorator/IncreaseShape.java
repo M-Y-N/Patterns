@@ -1,10 +1,10 @@
 package myn.patterns.decorator.GraphicRedactorDecorator;
 
-public class IncreaseShape extends ShapeRedactor {
-    AbstractShapeRedactor shape;
+public class IncreaseShape extends AbstractShapeRedactor {
+    AbstractShapeRedactor shapeClon;
 
     public IncreaseShape(AbstractShapeRedactor shape) {
-        this.shape = shape;
+        this.shapeClon = shape;
     }
 
     @Override
