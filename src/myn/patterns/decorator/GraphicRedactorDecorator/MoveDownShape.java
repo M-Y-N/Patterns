@@ -9,7 +9,10 @@ public class MoveDownShape extends AbstractShapeRedactor {
 
     @Override
     public void draw(AbstractShapeRedactor shape) {
-        shape.y = shape.y - 3;
-        shape.draw(shape);
+        shapeClon.x = shape.x;
+        shapeClon.y = shape.y;
+        shapeClon.size = shape.size;
+        shapeClon.y = shapeClon.y - 3;
+        shapeClon.draw(shapeClon);
     }
 }

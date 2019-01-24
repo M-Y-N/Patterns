@@ -9,7 +9,10 @@ public class MoveUpShape extends AbstractShapeRedactor {
 
     @Override
     public void draw(AbstractShapeRedactor shape) {
-        shape.y = shape.y + 10;
-        shape.draw(shape);
+        shapeClon.x = shape.x;
+        shapeClon.y = shape.y;
+        shapeClon.size = shape.size;
+        shapeClon.y = shapeClon.y + 10;
+        shapeClon.draw(shapeClon);
     }
 }

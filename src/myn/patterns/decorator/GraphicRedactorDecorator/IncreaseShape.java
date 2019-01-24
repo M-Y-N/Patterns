@@ -9,7 +9,10 @@ public class IncreaseShape extends AbstractShapeRedactor {
 
     @Override
     public void draw(AbstractShapeRedactor shape) {
-        shape.size = shape.size * 5;
-        shape.draw(shape);
+        shapeClon.x = shape.x;
+        shapeClon.y = shape.y;
+        shapeClon.size = shape.size;
+        shapeClon.size = shapeClon.size * 5;
+        shapeClon.draw(shapeClon);
     }
 }
