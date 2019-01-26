@@ -1,18 +1,35 @@
 package myn.patterns.decorator.GraphicRedactorDecorator;
 
+/**
+ * @author Zaichenko Ivan
+ * Decorator class MoveUpShape extends AbstractShapeRedactor for move up shape
+ */
 public class MoveUpShape extends AbstractShapeRedactor {
-    AbstractShapeRedactor shapeClon;
+    /**
+     * Clone of shape for change parameters for drawing
+     */
+    AbstractShapeRedactor shapeClone;
 
-    public MoveUpShape(AbstractShapeRedactor shape) {
-        this.shapeClon = shape;
+    /**
+     * Constructor for creating shape with parameters
+     *
+     * @param shape- shape for clone
+     */
+    MoveUpShape(AbstractShapeRedactor shape) {
+        this.shapeClone = shape;
     }
 
+    /**
+     * Decorator method for move up of shape for drawing
+     *
+     * @param shape - shape for drawing
+     */
     @Override
     public void draw(AbstractShapeRedactor shape) {
-        shapeClon.x = shape.x;
-        shapeClon.y = shape.y;
-        shapeClon.size = shape.size;
-        shapeClon.y = shapeClon.y + 10;
-        shapeClon.draw(shapeClon);
+        shapeClone.x = shape.x;
+        shapeClone.y = shape.y;
+        shapeClone.size = shape.size;
+        shapeClone.y = shapeClone.y + 10;
+        shapeClone.draw(shapeClone);
     }
 }
