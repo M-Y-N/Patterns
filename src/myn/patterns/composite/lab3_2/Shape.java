@@ -1,10 +1,10 @@
 package myn.patterns.composite.lab3_2;///**
 // * @author Ivan Zaichenko
 // * @version 1.0
-// * Інтерфейс Shape
+// * Інтерфейс ShapeImpl
 // * Загальний інтерфейс компонентів.
 // */
-//public interface Shape {
+//public interface ShapeImpl {
 //    public int getX();
 //
 //    public int getY();

@@ -3,7 +3,7 @@ package myn.patterns.composite.lab3_2;
 /**
  * @author Ivan Zaichenko
  * @version 1.0
- * Абстрактний клас BaseShape який реалізує інтерфейс Shape
+ * Абстрактний клас BaseShape який реалізує інтерфейс ShapeImpl
  */
 abstract class BaseShape {
     private int x;
