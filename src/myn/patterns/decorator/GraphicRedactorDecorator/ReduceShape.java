@@ -2,15 +2,15 @@ package myn.patterns.decorator.GraphicRedactorDecorator;
 
 /**
  * @author Zaichenko Ivan
- * Decorator class ReduceShape extends AbstractShape for reduce shape
+ * Decorator class ReduceShape extends Shape for reduce shape
  */
-public class ReduceShape extends AbstractShape {
+public class ReduceShape extends AbstractDecoratorShape {
     /**
      * Constructor for creating shape with parameters
      *
      * @param shape - shape for clone
      */
-    ReduceShape(AbstractShape shape) {
+    ReduceShape(Shape shape) {
         super(shape);
     }
 
@@ -21,7 +21,7 @@ public class ReduceShape extends AbstractShape {
      */
     @Override
     public int getX() {
-        return shapeClone.getX();
+        return next.getX();
     }
 
     /**
@@ -31,7 +31,7 @@ public class ReduceShape extends AbstractShape {
      */
     @Override
     public int getY() {
-        return shapeClone.getY();
+        return next.getY();
     }
 
     /**
@@ -41,6 +41,6 @@ public class ReduceShape extends AbstractShape {
      */
     @Override
     public int getSize() {
-        return shapeClone.getSize() / 2;
+        return next.getSize() / 2;
     }
 }

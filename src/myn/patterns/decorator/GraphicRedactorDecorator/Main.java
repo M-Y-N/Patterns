@@ -12,8 +12,8 @@ public class Main {
      */
     public static void main(String[] args) {
         VectorRedactor vectorRedactor = new VectorRedactor();
-        AbstractShape shapeRedactor = new Shape(3, 3, 10);
-        AbstractShape shape = new MoveDownShape(new MoveUpShape(new ReduceShape(new IncreaseShape(shapeRedactor))));
+        Shape shapeRedactor = new ShapeImpl(3, 3, 10);
+        Shape shape = new MoveDownShape(new MoveUpShape(new ReduceShape(new IncreaseShape(shapeRedactor))));
         vectorRedactor.draw(shape);
     }
 }

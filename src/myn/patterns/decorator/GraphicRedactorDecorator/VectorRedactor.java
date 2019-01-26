@@ -17,7 +17,7 @@ public class VectorRedactor {
      *
      * @param shape - shape for drawing
      */
-    public void draw(AbstractShape shape) {
+    public void draw(Shape shape) {
         System.out.println("Draw shape with coordinate x = " + shape.getX() + " y = " + shape.getY() + " size = " + shape.getSize());
     }
 }

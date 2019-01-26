@@ -2,16 +2,16 @@ package myn.patterns.decorator.GraphicRedactorDecorator;
 
 /**
  * @author Zaichenko Ivan
- * Decorator class MoveUpShape extends AbstractShape for move up shape
+ * Decorator class MoveUpShape extends Shape for move up shape
  */
-public class MoveUpShape extends AbstractShape {
+public class MoveUpShape extends AbstractDecoratorShape {
 
     /**
      * Constructor for creating shape with parameters
      *
      * @param shape - shape for clone
      */
-    MoveUpShape(AbstractShape shape) {
+    MoveUpShape(Shape shape) {
         super(shape);
     }
 
@@ -22,7 +22,7 @@ public class MoveUpShape extends AbstractShape {
      */
     @Override
     public int getX() {
-        return shapeClone.getX();
+        return next.getX();
     }
 
     /**
@@ -32,7 +32,7 @@ public class MoveUpShape extends AbstractShape {
      */
     @Override
     public int getY() {
-        return shapeClone.getY() + 10;
+        return next.getY() + 10;
     }
 
     /**
@@ -42,6 +42,6 @@ public class MoveUpShape extends AbstractShape {
      */
     @Override
     public int getSize() {
-        return shapeClone.getSize();
+        return next.getSize();
     }
 }
