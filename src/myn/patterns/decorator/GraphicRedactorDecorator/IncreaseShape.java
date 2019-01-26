@@ -2,35 +2,46 @@ package myn.patterns.decorator.GraphicRedactorDecorator;
 
 /**
  * @author Zaichenko Ivan
- * Decorator class IncreaseShape extends AbstractShapeRedactor for increase shape
+ * Decorator class IncreaseShape extends AbstractShape for increase shape
  */
-public class IncreaseShape extends AbstractShapeRedactor {
-    /**
-     * Clone of shape for change parameters for drawing
-     */
-    AbstractShapeRedactor shapeClone;
+public class IncreaseShape extends AbstractShape {
 
     /**
      * Constructor for creating shape with parameters
      *
-     * @param shape- shape for clone
+     * @param shape - shape for clone
      */
-    IncreaseShape(AbstractShapeRedactor shape) {
-        this.shapeClone = shape;
+    IncreaseShape(AbstractShape shape) {
+        super(shape);
     }
 
-
     /**
-     * Decorator method for increase of shape for drawing
+     * Abstract Getter of coordinate x
      *
-     * @param shape - shape for drawing
+     * @return coordinate x
      */
     @Override
-    public void draw(AbstractShapeRedactor shape) {
-        shapeClone.x = shape.x;
-        shapeClone.y = shape.y;
-        shapeClone.size = shape.size;
-        shapeClone.size = shapeClone.size * 5;
-        shapeClone.draw(shapeClone);
+    public int getX() {
+        return shapeClone.getX();
+    }
+
+    /**
+     * Abstract Getter of coordinate y
+     *
+     * @return coordinate y
+     */
+    @Override
+    public int getY() {
+        return shapeClone.getY();
+    }
+
+    /**
+     * Getter of size
+     *
+     * @return size
+     */
+    @Override
+    public int getSize() {
+        return shapeClone.getSize() * 5;
     }
 }
