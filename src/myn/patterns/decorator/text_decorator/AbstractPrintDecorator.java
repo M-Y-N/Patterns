@@ -1,31 +1,26 @@
 package myn.patterns.decorator.text_decorator;
 
-/**
- * @author Zaichenko Vasyl
- * Decorator class for printing text by lower register way
- */
-public class LowerRegisterPrint extends Print {
+public abstract class AbstractPrintDecorator implements Print {
     /**
      * object other printer for combination different variant of typing
      */
-    private Print printer;
+    protected Print printer;
 
     /**
      * Constructor of lower register printer
      *
      * @param printer next object other printer for next variant of typing
      */
-    public LowerRegisterPrint(Print printer) {
+    public AbstractPrintDecorator(Print printer) {
         this.printer = printer;
     }
 
     /**
-     * Typing lower register text in the editor
+     * Typing text by different ways in the editor
      *
+     * @param text
      * @return the operation
      */
     @Override
-    public String print() {
-        return printer.print().toLowerCase();
-    }
+    public abstract String print(String text);
 }

@@ -4,15 +4,12 @@ package myn.patterns.decorator.text_decorator;
  * @author Zaichenko Vasyl
  * Class for printing text without changes
  */
-public class TextPrint extends Print {
+public class TextPrint implements Print {
 
     /**
      * Constructor of printer without changes
-     *
-     * @param text text for printing in the editor
      */
-    public TextPrint(String text) {
-        super.text = text;
+    public TextPrint() {
     }
 
     /**
@@ -21,7 +18,7 @@ public class TextPrint extends Print {
      * @return the operation
      */
     @Override
-    public String print() {
+    public String print(String text) {
         return text;
     }
 }

@@ -2,25 +2,25 @@ package myn.patterns.decorator.text_decorator;
 
 /**
  * @author Zaichenko Vasyl
- * Decorator class for printing text with quotations
+ * Decorator class for printing text by lower register way
  */
-public class QuotationPrint extends AbstractPrintDecorator {
+public class LowerCasePrint extends AbstractPrintDecorator {
     /**
-     * Constructor of Quotation printer
+     * Constructor of lower register printer
      *
      * @param printer next object other printer for next variant of typing
      */
-    public QuotationPrint(Print printer) {
+    public LowerCasePrint(Print printer) {
         super(printer);
     }
 
     /**
-     * Typing text with quotations in the editor
+     * Typing lower register text in the editor
      *
      * @return the operation
      */
     @Override
     public String print(String text) {
-        return "\"" + printer.print(text) + "\"";
+        return printer.print(text).toLowerCase();
     }
 }

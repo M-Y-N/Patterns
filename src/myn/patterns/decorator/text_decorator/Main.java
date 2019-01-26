@@ -11,12 +11,12 @@ public class Main {
      * @param args program arguments
      */
     public static void main(String[] args) {
-        Print print1 = new SymbolNewLinePrint(new UpperRegisterPrint(new TextPrint("Print First")));
-        Print print2 = new SymbolNewLinePrint(new QuotationPrint(new LowerRegisterPrint(new TextPrint("Print Second"))));
-        Print print3 = new QuotationPrint(new LowerRegisterPrint(new TextPrint("Print Third")));
+        Print print1 = new SymbolNewLinePrint(new UpperCasePrint(new TextPrint()));
+        Print print2 = new SymbolNewLinePrint(new QuotationPrint(new LowerCasePrint(new TextPrint())));
+        Print print3 = new QuotationPrint(new LowerCasePrint(new TextPrint()));
 
-        System.out.println(print1.print());
-        System.out.println(print2.print());
-        System.out.println(print3.print());
+        System.out.println(print1.print("Print First"));
+        System.out.println(print2.print("Print Second"));
+        System.out.println(print3.print("Print Third"));
     }
 }

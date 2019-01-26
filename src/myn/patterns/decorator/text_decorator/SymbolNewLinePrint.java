@@ -4,11 +4,7 @@ package myn.patterns.decorator.text_decorator;
  * @author Zaichenko Vasyl
  * Decorator class for printing text with symbol of new line
  */
-public class SymbolNewLinePrint extends Print {
-    /**
-     * object other printer for combination different variant of typing
-     */
-    private Print printer;
+public class SymbolNewLinePrint extends AbstractPrintDecorator {
 
     /**
      * Constructor of printer with symbol of new line
@@ -16,7 +12,7 @@ public class SymbolNewLinePrint extends Print {
      * @param printer next object other printer for next variant of typing
      */
     public SymbolNewLinePrint(Print printer) {
-        this.printer = printer;
+        super(printer);
     }
 
     /**
@@ -25,7 +21,7 @@ public class SymbolNewLinePrint extends Print {
      * @return the operation
      */
     @Override
-    public String print() {
-        return printer.print() + "\n";
+    public String print(String text) {
+        return printer.print(text) + "\n";
     }
 }

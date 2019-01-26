@@ -4,19 +4,15 @@ package myn.patterns.decorator.text_decorator;
  * @author Zaichenko Vasyl
  * Decorator class for printing text by upper register way
  */
-public class UpperRegisterPrint extends Print {
-    /**
-     * object other printer for combination different variant of typing
-     */
-    private Print printer;
+public class UpperCasePrint extends AbstractPrintDecorator {
 
     /**
      * Constructor of upper register printer
      *
      * @param printer next object other printer for next variant of typing
      */
-    public UpperRegisterPrint(Print printer) {
-        this.printer = printer;
+    public UpperCasePrint(Print printer) {
+        super(printer);
     }
 
     /**
@@ -25,7 +21,7 @@ public class UpperRegisterPrint extends Print {
      * @return the operation
      */
     @Override
-    public String print() {
-        return printer.print().toUpperCase();
+    public String print(String text) {
+        return printer.print(text).toUpperCase();
     }
 }
