@@ -2,12 +2,12 @@ package myn.patterns.decorator.text_decorator;
 
 /**
  * @author Zaichenko Vasyl
- * Decorator class for printing text by upper register way
+ * Decorator class for printing text by upper case way
  */
 public class UpperCasePrint extends AbstractPrintDecorator {
 
     /**
-     * Constructor of upper register printer
+     * Constructor of upper case printer
      *
      * @param printer next object other printer for next variant of typing
      */
@@ -16,7 +16,7 @@ public class UpperCasePrint extends AbstractPrintDecorator {
     }
 
     /**
-     * Typing upper register text in the editor
+     * Typing upper case text in the editor
      *
      * @return the operation
      */

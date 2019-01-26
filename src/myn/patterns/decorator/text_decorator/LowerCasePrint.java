@@ -2,11 +2,11 @@ package myn.patterns.decorator.text_decorator;
 
 /**
  * @author Zaichenko Vasyl
- * Decorator class for printing text by lower register way
+ * Decorator class for printing text by lower case way
  */
 public class LowerCasePrint extends AbstractPrintDecorator {
     /**
-     * Constructor of lower register printer
+     * Constructor of lower case printer
      *
      * @param printer next object other printer for next variant of typing
      */
@@ -15,7 +15,7 @@ public class LowerCasePrint extends AbstractPrintDecorator {
     }
 
     /**
-     * Typing lower register text in the editor
+     * Typing lower case text in the editor
      *
      * @return the operation
      */
